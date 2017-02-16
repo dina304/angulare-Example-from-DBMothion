@@ -1,0 +1,13 @@
+﻿
+    <div>
+        <h2>Employee List</h2>
+            <table class="table table-striped">
+                <tr ng-repeat="employee in persons">
+                    <td>{{employee.FirstName}} {{employee.LastName}}</td>
+                    <td>{{employee.Position}}</td>
+                    <td><button class="btn btn-info" ng-click="viewEmployee(employee.Id)">View</button></td>
+                </tr>
+            </table>
+
+</div>
+

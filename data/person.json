@@ -1,0 +1,30 @@
+[{
+    "Id":1,
+    "FirstName": "Bon",
+    "LastName": "Jovy",
+    "Position": "man1",
+    "managerId": 2
+  },
+  {
+    "Id":2,
+    "FirstName": "Luis",
+    "LastName": "Karoll",
+    "Position": "man2",
+    "managerId": 0
+  },
+  {
+    "Id":3,
+    "FirstName": "Barbara",
+    "LastName": "Straisent",
+    "Position": "man3",
+    "managerId": 2
+  },
+  {
+    "Id":4,
+    "FirstName": "Suzan",
+    "LastName": "Dalal",
+    "Position": "man1",
+    "managerId": 3
+  }
+
+]

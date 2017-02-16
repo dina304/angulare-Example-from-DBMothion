@@ -1,0 +1,49 @@
+[{
+  "Text": "aaaaaaaa",
+  "Date":"01-01-2016",
+  "EmployeeId": 1,
+  "ManagerID":2
+},
+  {
+    "Text": "bbbbbb",
+    "Date":"01-02-2016",
+    "EmployeeId": 1,
+    "ManagerID":2
+  },
+  {
+    "Text": "cccccc",
+    "Date":"01-03-2016",
+    "EmployeeId": 1,
+    "ManagerID":2
+  },
+  {
+    "Text": "dddddd",
+    "Date":"01-01-2016",
+    "EmployeeId": 2,
+    "ManagerID":0
+  },
+  {
+    "Text": "eeeeee",
+    "Date":"01-02-2016",
+    "EmployeeId": 3,
+    "ManagerID":2
+  },
+  {
+    "Text": "fffffff",
+    "Date":"01-03-2016",
+    "EmployeeId": 3,
+    "ManagerID":2
+  },
+  {
+    "Text": "ggggggg",
+    "Date":"01-04-2016",
+    "EmployeeId": 4,
+    "ManagerID":3
+  },
+  {
+    "Text": "hhhhhh",
+    "Date":"01-06-2016",
+    "EmployeeId": 4,
+    "ManagerID":3
+  }
+]

@@ -1,0 +1,81 @@
+﻿<div>
+    <div id="generalInfo">
+        <div id="pic">
+            Picture
+        </div>
+        <div id="info">
+            <table>
+                <tr>
+                    <td><h4>Name: </h4></td>
+                    <td>{{person.FirstName}} {{person.LastName}}</td>
+                </tr>
+                <tr>
+                    <td><h4>Possion: </h4></td>
+                    <td><h4>{{person.Position}}</h4></td>
+                </tr>
+                <tr class="managerSection">
+                    <td><h4>Manager: </h4></td>
+                    <td>{{manager.FirstName}} {{manager.LastName}}</td>
+                    <td>
+					<button class="btn btn-info" ng-click="open('','/Views/dialogs/addReportView.html','AddReportDialogCtrl',person)">Report</button>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+    <div id="myTask" ng-controller="EmployeeTasksCtrl">
+        <h3>My Tasks</h3>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Text</th>
+                <th>Due Date</th>
+            </tr>
+            </thead>
+            <tr ng-repeat="task in taskList">
+                <td>{{task.Text}}</td>
+                <td>{{task.DueDate}}</td>
+            </tr>
+        </table>
+    </div>
+	<div id="mySubEmp" ng-controller="SubEmployeeCtrl">
+		<div ng-show='subEmployeeList.length > 0'>
+			<h3>My Subordinates Tasks</h3>
+			<table class="table table-striped">
+				<thead>
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+				</tr>
+				</thead>
+				<tr ng-repeat="subEmployee in subEmployeeList">
+					<td>{{subEmployee.FirstName}}</td>
+					<td>{{subEmployee.LastName}}</td>
+					<td>
+						<button class="btn btn-info" ng-click="open('','/Views/dialogs/addTaskView.html','AddTaskDialogCtrl',subEmployee)">Assign Task</button>
+					</td>
+
+				</tr>
+			</table>
+		</div>
+	</div>
+    <!--
+    <div id="addReportDialog">
+        <div id="modalReport" title="Add Report" class="hide">
+            <form role="form" id="addReportForm" name="addReportForm" ng-submit="addTaskToEmp()" novalidate>
+                <div class="form-group">
+                    <label>report Text</label>
+                    <textarea class="form-control" rows="5" id="addReportText" ng-model="report.text"></textarea>
+                </div>
+                <div class="floatRight">
+                     <input type="submit" id="addReportSave" value="Save" class="btn btn-info" />
+
+
+                    <button type="button" id="addReportCloseDialog" class="btn btn-info closeDialog">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>-->
+
+</div>
